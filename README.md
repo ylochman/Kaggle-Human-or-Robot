@@ -50,7 +50,7 @@ details: https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot
 7. ip_entropy - the entropy for how many ips a bidder used
 8. url_entropy - the entropy for how many urls a bidder was reffered from
 
-#### Modeles that was built
+#### Models that was built
 1. Gradient Boosting
 2. Random Forest
 
