@@ -38,3 +38,22 @@ The data in this competition comes from an online platform, not from Facebook.
 * url - url where the bidder was referred from (obfuscated to protect privacy). 
 
 details: https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot
+
+## Solution (shortly)
+#### Features that was generated:
+1. total_bids - total count of user's bids
+2. total_auctions - total count of auctions in which a bidder participated
+3. bids_per_auction - mean number of user's bids in auction
+4. mean_time_diff - mean time between a user's bid and that user's previous bid
+5. mean_response - mean time between a user's bid in auction and previous bid in the same auction
+6. min_response - minimum time between a user's bid in auction and previous bid in the same auction
+7. ip_entropy - the entropy for how many ips a bidder used
+8. url_entropy - the entropy for how many urls a bidder was reffered from
+
+#### Modeles that was built
+1. Gradient Boosting
+2. Random Forest
+
+#### Best result
+AUC = 0.90675 (Private Score) for Random Forest Classifier with max_depth = 4 for 6 features: total_bids, total_auctions, mean_time_diff, mean_response, ip_entropy, url_entropy
+
