@@ -18,7 +18,7 @@ The data in this competition comes from an online platform, not from Facebook.
 
 ### Data fields
 
-#### [ the bidder dataset ]
+#### the bidder dataset
 * bidder_id – Unique identifier of a bidder.
 * payment_account – Payment account associated with a bidder. These are obfuscated to protect privacy. 
 * address – Mailing address of a bidder. These are obfuscated to protect privacy. 
@@ -26,7 +26,7 @@ The data in this competition comes from an online platform, not from Facebook.
   1. Bidders who are identified as bots/fraudulent with clear proof. Their accounts were banned by the auction site.
   2. Bidder who may have just started their business/clicks or their stats exceed from system wide average. There are no clear proof that they are bots. 
 
-#### [ the bid dataset ]
+#### the bid dataset
 * bid_id - unique id for this bid
 * bidder_id – Unique identifier of a bidder (same as the bidder_id used in train.csv and test.csv)
 * auction – Unique identifier of an auction
@@ -37,7 +37,7 @@ The data in this competition comes from an online platform, not from Facebook.
 * ip – IP address of a bidder (obfuscated to protect privacy).
 * url - url where the bidder was referred from (obfuscated to protect privacy). 
 
-details: https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot
+details: http://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot
 
 ## Solution (shortly)
 #### Features that was generated:
@@ -55,5 +55,5 @@ details: https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot
 2. Random Forest
 
 #### Best result
-AUC = 0.90675 (Private Score) for Random Forest Classifier with max_depth = 4 for 6 features: total_bids, total_auctions, mean_time_diff, mean_response, ip_entropy, url_entropy
+AUC = 0.90903 (Private Score) for Random Forest Classifier with max_depth = 3 for 6 features: total_bids, total_auctions, bids_per_auction, mean_time_diff, ip_entropy, url_entropy
 
