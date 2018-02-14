@@ -37,7 +37,8 @@ The data in this competition comes from an online platform, not from Facebook.
 * ip – IP address of a bidder (obfuscated to protect privacy).
 * url - url where the bidder was referred from (obfuscated to protect privacy). 
 
-details: http://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot
+[Project details](http://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot)
+
 
 ## Solution (shortly)
 #### Features that was generated:
